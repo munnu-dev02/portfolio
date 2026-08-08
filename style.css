@@ -1266,3 +1266,29 @@ body.dark-mode #typing{
     color:#555;
     font-size:18px;
 }
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.hero-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.github-btn {
+    background: #24292e;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    transform: translateY(-3px);
+}
