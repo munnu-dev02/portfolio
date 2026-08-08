@@ -1326,4 +1326,32 @@ body.dark-mode #typing{
 }/* Footer Center Alignment */
 footer {
     text-align: center;
+}/* Contact GitHub Link */
+.contact a[href*="github.com"] {
+    color: #24292f;
+}
+
+.contact a[href*="github.com"]:hover {
+    color: #000000;
+}/* Contact GitHub Button */
+
+.social-links a[href*="github.com"] {
+    background: #24292f;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.social-links a[href*="github.com"] i {
+    color: #ffffff;
+}
+
+.social-links a[href*="github.com"]:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
