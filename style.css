@@ -1292,3 +1292,35 @@ body.dark-mode #typing{
 .github-btn:hover {
     transform: translateY(-3px);
 }
+/* Calculator Project Buttons */
+
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 8px 5px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-card a[href*="github.com"] {
+    background: #24292f;
+    color: #ffffff;
+}
+
+.project-card a[href*="github.com"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.project-card a[href*="github.io"] {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.project-card a[href*="github.io"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
