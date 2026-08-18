@@ -1,534 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <!-- Project Modal -->
-
 <div id="projectModal" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close">&times;</span>
-
-        <h2 id="modalTitle">Project Title</h2>
-
-        <p id="modalDescription">
-            Project Description
-        </p>
-
-    </div>
-
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle">Project Title</h2>
+    <p id="modalDescription">
+      Project Description
+    </p>
+  </div>
 </div>
 <!-- Project Details Modal -->
 <div id="projectModal" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close">&times;</span>
-
-        <img id="modalImage" src="" alt="Project Image">
-
-        <h2 id="modalTitle"></h2>
-
-        <p id="modalDescription"></p>
-
-        <a id="modalGithub" href="#" target="_blank" class="btn">
-            View on GitHub
-        </a>
-
-    </div>
-
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Project Image">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <a id="modalGithub" href="#" target="_blank" class="btn">
+      View on GitHub
+    </a>
+  </div>
 </div>
 <body>
-
-    <!-- Header -->
-    <header>
-        <h1>Munnu Prasad Gupta</h1>
-        <p>Web Developer</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="menu-toggle" id="menu-toggle">
-    ☰
-</div>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-        <a href="#services">Services</a>
-        <a href="#achievements">Achievements</a>
-
-        <button id="darkModeBtn">🌙 Dark Mode</button>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero" data-aos="fade-up">
-
-        <div class="hero-text">
-
-            <h2>Hello, I'm</h2>
-
-            <h1>Munnu Prasad Gupta</h1>
-
-            <h3><span id="typing"></span></h3>
-
-<p>
-    I build responsive, modern and user-friendly websites
-    using HTML, CSS and JavaScript.
-</p>
-
-<div class="hero-buttons">
-
-    <a href="mailto:mpgupta.dev02@gmail.com" class="hire-btn">
-        <i class="fas fa-envelope"></i>
-        Hire Me
-    </a>
-
-    <a href="assets/resume.pdf" target="_blank" class="resume-btn">
-        <i class="fas fa-file-pdf"></i>
-        View Resume
-    </a>
-
-    <a href="https://github.com/munnu-dev02"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="github-btn">
-        <i class="fab fa-github"></i>
-        GitHub
-    </a>
-
-</div>
-
-        </div>
-
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="Profile Photo">
-        </div>
-
-    </section>
-
-    <!-- About Section -->
-         <section id="about" class="about" data-aos="fade-right">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hello! My name is <strong>Munnu Prasad Gupta</strong>.
-            I am a BCA graduate and currently pursuing MCA.
-            I am passionate about Web Development and enjoy building
-            responsive, user-friendly websites using HTML, CSS, JavaScript,
-            and React. My goal is to become a Full Stack Web Developer.
-        </p>
-
-    </section>
-
-    <!-- Skills Section -->
-<section id="skills" class="skills" data-aos="zoom-in">
-
-    <h2>My Skills</h2>
-
-    <div class="skill">
-
-        <p>HTML</p>
-        <div class="progress">
-            <div class="html">90%</div>
-        </div>
-
-        <p>CSS</p>
-        <div class="progress">
-            <div class="css">85%</div>
-        </div>
-
-        <p>JavaScript</p>
-        <div class="progress">
-            <div class="javascript">70%</div>
-        </div>
-
-        <p>React JS</p>
-        <div class="progress">
-            <div class="react">60%</div>
-        </div>
-
-        <p>Bootstrap</p>
-        <div class="progress">
-            <div class="bootstrap">75%</div>
-        </div>
-
-        <p>Git & GitHub</p>
-        <div class="progress">
-            <div class="git">65%</div>
-        </div>
-
+  <!-- Header -->
+  <header>
+    <h1>Munnu Prasad Gupta</h1>
+    <p>Web Developer</p>
+  </header>
+  <!-- Navigation -->
+  <nav>
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
     </div>
-
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects" data-aos="fade-left">
-
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#achievements">Achievements</a>
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h2>Hello, I'm</h2>
+      <h1>Munnu Prasad Gupta</h1>
+      <h3><span id="typing"></span></h3>
+      <p>
+        I build responsive, modern and user-friendly websites
+        using HTML, CSS and JavaScript.
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:mpgupta.dev02@gmail.com" class="hire-btn">
+          <i class="fas fa-envelope"></i>
+          Hire Me
+        </a>
+        <a href="assets/resume.pdf" target="_blank" class="resume-btn">
+          <i class="fas fa-file-pdf"></i>
+          View Resume
+        </a>
+        <a href="https://github.com/munnu-dev02" target="_blank" rel="noopener noreferrer" class="github-btn">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Photo">
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <strong>Munnu Prasad Gupta</strong>.
+      I am a BCA graduate and currently pursuing MCA.
+      I am passionate about Web Development and enjoy building
+      responsive, user-friendly websites using HTML, CSS, JavaScript,
+      and React. My goal is to become a Full Stack Web Developer.
+    </p>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills" data-aos="zoom-in">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress">
+        <div class="html">90%</div>
+      </div>
+      <p>CSS</p>
+      <div class="progress">
+        <div class="css">85%</div>
+      </div>
+      <p>JavaScript</p>
+      <div class="progress">
+        <div class="javascript">70%</div>
+      </div>
+      <p>React JS</p>
+      <div class="progress">
+        <div class="react">60%</div>
+      </div>
+      <p>Bootstrap</p>
+      <div class="progress">
+        <div class="bootstrap">75%</div>
+      </div>
+      <p>Git & GitHub</p>
+      <div class="progress">
+        <div class="git">65%</div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects" data-aos="fade-left">
     <h2>My Projects</h2>
-
     <div class="project-container">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="images/portfolio.png" alt="Portfolio">
-
-            <h3>Portfolio Website</h3>
-
-            <p>
-                Responsive personal portfolio website built using HTML, CSS and JavaScript.
-            </p>
-
-            <button onclick="openModal(
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/portfolio.png" alt="Portfolio">
+        <h3>Portfolio Website</h3>
+        <p>
+          Responsive personal portfolio website built using HTML, CSS and JavaScript.
+        </p>
+        <button onclick="openModal(
                 'Portfolio Website',
                 'Responsive Portfolio Website created using HTML, CSS and JavaScript.',
                 'images/portfolio.png',
                 'https://github.com/munnu-dev02/portfolio'
             )">
-                View Details
-            </button>
-
-<a href="https://github.com/munnu-dev02/portfolio"
-   target="_blank"
-   rel="noopener noreferrer">
-    GitHub
-</a>        
-</div>
-
-<!-- Project 2 -->
-<div class="project-card">
-    <img src="images/calculator.png" alt="Calculator">
-
-    <h3>Calculator</h3>
-
-    <p>
-        Responsive calculator built with HTML, CSS and JavaScript,
-        featuring basic arithmetic operations and a clean UI.
-    </p>
-
-    <button onclick="openModal(
+          View Details
+        </button>
+        <a href="https://github.com/munnu-dev02/portfolio" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/calculator.png" alt="Calculator">
+        <h3>Calculator</h3>
+        <p>
+          Responsive calculator built with HTML, CSS and JavaScript,
+          featuring basic arithmetic operations and a clean UI.
+        </p>
+        <button onclick="openModal(
         'Calculator',
         'Responsive calculator built with HTML, CSS and JavaScript.',
         'images/calculator.png',
         'https://github.com/munnu-dev02/calculator'
     )">
-        View Details
-    </button>
-
-    <a href="https://munnu-dev02.github.io/calculator/"
-       target="_blank"
-       rel="noopener noreferrer">
-        Live Demo
-    </a>
-
-    <a href="https://github.com/munnu-dev02/calculator"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub
-    </a>
-</div>
-
-        <!-- Project 3 -->
-<div class="project-card">
-
-    <img src="images/weather.png" alt="Weather App">
-
-    <h3>Weather App</h3>
-
-    <p>
-        Weather App using JavaScript API for live weather updates.
-    </p>
-
-    <button onclick="openModal(
+          View Details
+        </button>
+        <a href="https://munnu-dev02.github.io/calculator/" target="_blank" rel="noopener noreferrer">
+          Live Demo
+        </a>
+        <a href="https://github.com/munnu-dev02/calculator" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/weather.png" alt="Weather App">
+        <h3>Weather App</h3>
+        <p>
+          Weather App using JavaScript API for live weather updates.
+        </p>
+        <button onclick="openModal(
         'Weather App',
         'Weather App built using HTML, CSS and Open-Meteo API.',
         'images/weather.png',
         'https://github.com/munnu-dev02/weather-app'
     )">
-        View Details
-    </button>
-
-    <a href="https://munnu-dev02.github.io/weather-app/"
-       target="_blank"
-       rel="noopener noreferrer">
-        Live Demo
-    </a>
-
-    <a href="https://github.com/munnu-dev02/weather-app"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub
-    </a>
-
-</div>
-
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="experience" data-aos="fade-up">
-
-    <h2>Experience</h2>
-
-    <div class="experience-card">
-
-        <h3>Website Design and Development Intern</h3>
-
-        <h4>Istudio</h4>
-
-        <p><strong>Duration:</strong> 3 Month</p>
-
-        <p>
-            • Built responsive websites using HTML, CSS and JavaScript.<br>
-            • Improved UI design and website responsiveness.<br>
-            • Learned Git & GitHub for project management.<br>
-            • Worked on real-world web development projects.
-        </p>
-
- </section>
-
-<!-- Services Section -->
-<section id="services" class="services" data-aos="fade-up">
-
-    <h2>My Services</h2>
-
-    <div class="services-container">
-
-        <div class="service-card">
-            <i>💻</i>
-            <h3>Web Design</h3>
-            <p>
-                Modern, responsive and attractive website designs using HTML and CSS.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <i>⚙️</i>
-            <h3>Web Development</h3>
-            <p>
-                Interactive websites using HTML, CSS and JavaScript with clean code.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <i>📱</i>
-            <h3>Responsive Design</h3>
-            <p>
-                Mobile-friendly websites that work perfectly on every device.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education" data-aos="flip-up">
-
-        <h2>Education</h2>
-
-        <div class="education-card">
-            <h3>Master of Computer Applications (MCA)</h3>
-            <p>Asian International University</p>
-            <p>2025 - 2027 (Pursuing)</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <p>CSJM University, Kanpur</p>
-            <p>Completed in 2022</p>
-        </div>
-
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates" data-aos="zoom-in-up">
-
-        <h2>Certificates</h2>
-
-        <div class="certificate-container">
-
-            <div class="certificate-card">
-                <h3>Web Development Internship</h3>
-                <p>Completed Web Development Internship.</p>
-                
-            </div>
-
-            <div class="certificate-card">
-                <h3>HTML & CSS Certificate</h3>
-                <p>Successfully completed HTML & CSS course.</p>
-                
-            </div>
-
-            <div class="certificate-card">
-                <h3>JavaScript Certificate</h3>
-                <p>Successfully completed JavaScript course.</p>
-            
-           </div>
-
-        </div>
-
-    </section>
-<!-- Achievements Section -->
-<section id="achievements" class="achievements" data-aos="zoom-in">
-
-    <h2>Achievements</h2>
-
-    <div class="achievement-container">
-
-        <div class="achievement-card">
-            <h3>3+</h3>
-            <p>Web Projects Completed</p>
-        </div>
-
-        <div class="achievement-card">
-            <h3>5+</h3>
-            <p>Skills Learned</p>
-        </div>
-
-        <div class="achievement-card">
-            <h3>2+</h3>
-            <p>Certificates Earned</p>
-        </div>
-
-        <div class="achievement-card">
-            <h3>1</h3>
-            <p>Internship Completed</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- Contact Section -->
-<!-- ========================= -->
-
-<section id="contact" class="contact" data-aos="fade-up">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact-info">
-
-        <p><strong>Name:</strong> Munnu Prasad Gupta</p>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:mpgupta.dev02@gmail.com">
-                mpgupta.dev02@gmail.com
-            </a>
-        </p>
-
-        <p><strong>Phone:</strong> +91 9399472189</p>
-
-        <p><strong>Location:</strong> Ballia, Uttar Pradesh, India</p>
-
-    </div>
-
-    <div class="social-links">
-
-        <a href="https://www.linkedin.com/in/munnu-prasad-gupta-024971229"
-           target="_blank"
-           rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-
-        <a href="https://github.com/munnu-dev02"
-           target="_blank"
-           rel="noopener noreferrer">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-
-    </div>
-
-    <form id="contactForm" class="contact-form">
-
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-        >
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-        >
-
-        <input
-            type="text"
-            name="title"
-            placeholder="Subject"
-            required
-        >
-
-        <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="6"
-            required
-        ></textarea>
-
-        <button type="submit">
-            Send Message
+          View Details
         </button>
-
+        <a href="https://munnu-dev02.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
+          Live Demo
+        </a>
+        <a href="https://github.com/munnu-dev02/weather-app" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
+  </section>
+  <!-- Experience Section -->
+  <section id="experience" class="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="experience-card">
+      <h3>Website Design and Development Intern</h3>
+      <h4>Istudio</h4>
+      <p><strong>Duration:</strong> 3 Month</p>
+      <p>
+        • Built responsive websites using HTML, CSS and JavaScript.<br>
+        • Improved UI design and website responsiveness.<br>
+        • Learned Git & GitHub for project management.<br>
+        • Worked on real-world web development projects.
+      </p>
+  </section>
+  <!-- Services Section -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>My Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <i>💻</i>
+        <h3>Web Design</h3>
+        <p>
+          Modern, responsive and attractive website designs using HTML and CSS.
+        </p>
+      </div>
+      <div class="service-card">
+        <i>⚙️</i>
+        <h3>Web Development</h3>
+        <p>
+          Interactive websites using HTML, CSS and JavaScript with clean code.
+        </p>
+      </div>
+      <div class="service-card">
+        <i>📱</i>
+        <h3>Responsive Design</h3>
+        <p>
+          Mobile-friendly websites that work perfectly on every device.
+        </p>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- Education Section -->
+  <section id="education" class="education" data-aos="flip-up">
+    <h2>Education</h2>
+    <div class="education-card">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p>Asian International University</p>
+      <p>2025 - 2027 (Pursuing)</p>
+    </div>
+    <div class="education-card">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p>CSJM University, Kanpur</p>
+      <p>Completed in 2022</p>
+    </div>
+  </section>
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates" data-aos="zoom-in-up">
+    <h2>Certificates</h2>
+    <div class="certificate-container">
+      <div class="certificate-card">
+        <h3>Web Development Internship</h3>
+        <p>Completed Web Development Internship.</p>
+      </div>
+      <div class="certificate-card">
+        <h3>HTML & CSS Certificate</h3>
+        <p>Successfully completed HTML & CSS course.</p>
+      </div>
+      <div class="certificate-card">
+        <h3>JavaScript Certificate</h3>
+        <p>Successfully completed JavaScript course.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements" data-aos="zoom-in">
+    <h2>Achievements</h2>
+    <div class="achievement-container">
+      <div class="achievement-card">
+        <h3>3+</h3>
+        <p>Web Projects Completed</p>
+      </div>
+      <div class="achievement-card">
+        <h3>5+</h3>
+        <p>Skills Learned</p>
+      </div>
+      <div class="achievement-card">
+        <h3>2+</h3>
+        <p>Certificates Earned</p>
+      </div>
+      <div class="achievement-card">
+        <h3>1</h3>
+        <p>Internship Completed</p>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= -->
+  <!-- Contact Section -->
+  <!-- ========================= -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Name:</strong> Munnu Prasad Gupta</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:mpgupta.dev02@gmail.com">
+          mpgupta.dev02@gmail.com
+        </a>
+      </p>
+      <p><strong>Phone:</strong> +91 9399472189</p>
+      <p><strong>Location:</strong> Ballia, Uttar Pradesh, India</p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/munnu-prasad-gupta-024971229" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/munnu-dev02" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="title" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">
+        Send Message
+      </button>
     </form>
-
-</section>
-<!-- ========================= -->
-<!-- Footer -->
-<!-- ========================= -->
-
-<footer>
-
+  </section>
+  <!-- ========================= -->
+  <!-- Footer -->
+  <!-- ========================= -->
+  <footer>
     <p>© 2026 Munnu Prasad Gupta | All Rights Reserved</p>
-
     <p>Made with ❤️ using HTML, CSS & JavaScript</p>
-
-</footer>
-
-<!-- ========================= -->
-<!-- AOS -->
-<!-- ========================= -->
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-AOS.init({
-    duration: 1000,
-    once: true
-});
-</script>
-
-<!-- Scroll To Top Button -->
-
-<button id="topBtn" title="Go to Top">⬆</button>
-
-<!-- EmailJS -->
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<!-- JavaScript -->
-
-<script src="script.js"></script>
-
+  </footer>
+  <!-- ========================= -->
+  <!-- AOS -->
+  <!-- ========================= -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <!-- Scroll To Top Button -->
+  <button id="topBtn" title="Go to Top">⬆</button>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
-
 </html>
